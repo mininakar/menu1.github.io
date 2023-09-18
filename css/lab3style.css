@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,cyrillic);
+
+
+.icon{
+    display: flex;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    line-height: 2.8em;
+    font-size: 55px;
+    color: #936d6d;
+    margin: 13px 0 8px;
+    letter-spacing: 0.08em;
+    margin-top: 10px;
+}
+.img_icon{
+    padding: 20px;
+    border-radius:50%;
+    height: 100px;
+    width: 100px;
+}
+.nav{
+    text-decoration: none;
+    padding-left: 0; /*убираем отступы*/
+    font-size: 25px;    /* размер шрифта */
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    float:left;
+}
+
+.nav a{
+    font-family: Mabry Pro,sans-serif;
+    text-decoration: none;  /*убираем подчеркивание текста ссылок*/
+    color: #0b2528;
+    border-right: 1px solid #565c65;
+    float:right; /*Размещаем список горизонтально для реализации меню*/
+    padding: 20px 20px;
+}
+
+.nav a:hover {
+  background: #8795a1;
+  color: black;}
+
+.column1{
+    border: solid #936d6d;
+    border-radius: 1%;
+    float: left;
+    width: 15%;
+    padding: 10px;
+    margin-right:15px;
+    margin-left: 5px;
+    height: 710px;
+}
+
+/* Оформление меню*/
+#nav, #nav ul {
+    list-style:none;
+    padding:0;
+    font-size: 24px;
+    width:100%;
+}
+
+#nav ul {
+    border-bottom:1px solid #ccc;
+    position:relative;
+    z-index:-1;
+}
+
+#nav li {
+    border-bottom:1px solid #ccc;
+    position:relative;
+    z-index:100;
+}
+
+#nav ul li {
+    margin-top:-23px;
+    transition: 0.4s linear 0.4s;
+}
+
+#nav li a {
+    background-color: #ffffff;
+    font-family: 'Lora', serif;
+    color: #936d6d;
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    line-height:28px;
+    outline:0;
+    padding-left:15px;
+    text-decoration:none;
+}
+
+#nav li a:hover {
+    background-color:#bcbdc1;
+}
+
+#nav ul li a {
+    background-color:#eee;
+    color:#000;
+    font-size:16px;
+    line-height:22px;
+}
+
+#nav ul li a:hover {
+    background-color:#ddd;
+    color:#444;
+}
+
+#nav a.sub:focus {
+    background:#bcbdc1;
+    outline:0;
+}
+
+#nav a:focus ~ ul li {
+    margin-top:0;
+    transition: 0.4s linear;
+}
+
+#nav a.sub:active {
+    background:#bcbdc1;
+    outline:0;
+}
+
+#nav a:active ~ ul li {
+    margin-top:0;
+}
+
+#nav ul:hover {
+    display:block;
+}
+
+
+.column2{
+  border: solid #936d6d;
+    border-radius: 1%;
+    float: left;
+    width: 65%;
+    padding: 10px;
+    height: 700px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+
+}
+
+.column2_img{
+    position: absolute;
+    width:200px;
+    height:200px;
+}
+
+.base{
+    float: left;
+    margin:15px;
+    margin-right: 20px;
+    position: relative;
+    width:200px;
+    height: 200px;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+}
+/*класс для основного блока и для наплывающего*/
+.layer{ /* наплывающий блок */
+    font-family: 'Lora', serif;
+    color: #986969;
+    position: absolute;  /* устанавливаем абсолютное позиционирование */
+    bottom:-100%;     /* смещаем на всю ширину от левой стороны */
+    text-align: center;
+    width:inherit; /* наследуем ширину и высоту */
+    height:inherit;
+    text-decoration: none;
+    background-color: rgba(94, 105, 121, 0.45); /* устанавливаем цвет и прозрачность */
+    transition: bottom .3s; /* добавляем плавность для позиционирования 0,3 секунды */
+}
+
+.base:hover .layer{ /* при наведении блок смещается на 0 px от левой стороны */
+        bottom:-85%;
+}
+
+
+
+.column3{
+    background-color: #c4b3b3;
+    border-radius: 2%;
+    float: left;
+    width: 12%;
+    padding: 10px;
+    height: 710px;
+}
+.block{
+
+   font-size: 20px;
+    border: solid #936d6d;
+    border-radius: 25%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.text{
+     font-family: 'Lora', serif;
+    text-align: centers;
+}
